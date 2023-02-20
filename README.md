@@ -1,2 +1,3 @@
 ![](pictures/Program1Out.png)
-![](pictures/Program2Out.png)
+![](pictures/Program2Output.png)
+

@@ -19,8 +19,8 @@ Next is the function for the sales report
     char *months[] = {"January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December", NULL};
     int i = 0;
     while (months[i]) {
-        printf("%s: ", months[i]);
-        printf("$%s", sales[i]);
+        printf("%-10s: ", months[i]);
+        printf("$%-10s", sales[i]);
         i++;
     }
 /*
@@ -48,7 +48,7 @@ Next is the function for the sales summary
     }
     printf("Maximum Sales: $%.2f\n", max);
     int w = 0;
-    float o = 6.00;
+    float o = 12.00;
     float avg = 0;
     float total = 0;
     while (months[w]) {
@@ -75,7 +75,7 @@ Next is the functino for the moving average
             v++;
         }
         avg2 = total2/6;
-        printf("%s - %s  ",months[monthtrack1],months[monthtrack2]);
+        printf("%-10s - %-10s  ",months[monthtrack1],months[monthtrack2]);
         printf("$%.2f\n", avg2);
         m = m + 1;
         start = start + 1;
